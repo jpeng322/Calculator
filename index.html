@@ -1,0 +1,49 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+
+<body class="container">
+    <div class="calculator">
+        <div class="display">Numbers</div>
+        <div class="calculatorbtn">
+            <div>
+                <button>AC</button>
+                <button>C</button>
+                <button>Del</button>
+                <button id="divide" class="operator">&#247 </button>
+            </div>
+            <div>
+                <button data-type="number">7</button>
+                <button data-type="number">8</button>
+                <button data-type="number">9</button>
+                <button id="multiply" class="operator">&#215</button>
+            </div>
+            <div>
+                <button data-type="number">4</button>
+                <button data-type="number">5</button>
+                <button data-type="number">6</button>
+                <button id="subract" class="operator">&#8722</button>
+            </div>
+            <div>
+                <button data-type="number">1</button>
+                <button data-type="number">2</button>
+                <button data-type="number">3</button>
+                <button id="add" class="operator"">&#43</button>
+            </div>
+            <div class=" bottom-row">
+                    <button data-type="number">.</button>
+                    <button data-type="number">0</button>
+                    <button id=equal data-type="number">=</button>
+            </div>
+        </div>
+
+
+        <!-- <span id=" sum-el">Sum: </span> -->
+        <script src="script.js"></script>
+</body>
+
+</html>
