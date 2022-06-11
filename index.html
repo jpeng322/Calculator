@@ -1,48 +1,60 @@
 <html>
 
 <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
     <link rel="stylesheet" href="style.css">
     <title>Calculator</title>
 </head>
 
-<body class="container">
-    <div class="calculator">
-        <div class="display">Numbers</div>
-        <div class="calculatorbtn">
-            <div>
-                <button>AC</button>
-                <button>C</button>
-                <button>Del</button>
-                <button id="divide" class="operator">&#247 </button>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <div class="display-container">
+                <div class="top-display"></div>
+                <div class="bottom-display"></div>
             </div>
-            <div>
-                <button data-type="number">7</button>
-                <button data-type="number">8</button>
-                <button data-type="number">9</button>
-                <button id="multiply" class="operator">&#215</button>
-            </div>
-            <div>
-                <button data-type="number">4</button>
-                <button data-type="number">5</button>
-                <button data-type="number">6</button>
-                <button id="subract" class="operator">&#8722</button>
-            </div>
-            <div>
-                <button data-type="number">1</button>
-                <button data-type="number">2</button>
-                <button data-type="number">3</button>
-                <button id="add" class="operator"">&#43</button>
+            <div class="calculatorbtn">
+                <div class=top-row>
+                    <button id="ac">AC</button>
+                    <button id="del">Del</button>
+                    <button id="divide" class="operator">&#247 </button>
+                </div>
+                <div>
+                    <button id="btn-7">7</button>
+                    <button id="btn-8">8</button>
+                    <button id="btn-9">9</button>
+                    <button id="multiply" class="operator">&#215</button>
+                </div>
+                <div>
+                    <button id="btn-4">4</button>
+                    <button id="btn-5">5</button>
+                    <button id="btn-6">6</button>
+                    <button id="subtract" class="operator">&#8722</button>
+                </div>
+                <div>
+                    <button id="btn-1">1</button>
+                    <button id="btn-2">2</button>
+                    <button id="btn-3">3</button>
+                    <button id="add" class="operator"">&#43</button>
             </div>
             <div class=" bottom-row">
-                    <button data-type="number">.</button>
-                    <button data-type="number">0</button>
-                    <button id=equal data-type="number">=</button>
+                        <button id="decimal">.</button>
+                        <button id="btn-0"">0</button>
+                    <!-- <button id=" equal">=</button> -->
+                        <button id="equal">=</button>
+                </div>
             </div>
         </div>
+        <footer class="footer">
+            <p id="copyright"> </p>
+            <a href="https://github.com/jpeng322"> <i class="fab fa-github" style='font-size:30px'></i>
+            </a>
 
-
-        <!-- <span id=" sum-el">Sum: </span> -->
+        </footer>
         <script src="script.js"></script>
 </body>
 
